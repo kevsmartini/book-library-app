@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <title>Book App</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <h1 class="page-title">Book Library App for Jola</h1>
+    <section class="form-container">
+
+      <form id="bookForm">
+      <div class="form-group">
+        <label for="titulo">Book:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Name of the book" required>
+     </div>
+      <div class="form-group">
+        <label for="autor">Author:</label>
+        <input type="text" id="autor" name="autor" placeholder="Author of the book" required>
+      </div>
+      <div class="form-group">
+        <label for="paginas">Pages:</label>
+        <input type="number" id="paginas" name="paginas" placeholder="Number of pages of the book" required>
+      </div>
+      <div class="form-group">
+        <label for="estado">Status:</label>
+        <select id="estado" name="estado" required>
+            <option value="not read">Not Read</option>
+            <option value="read">Read</option>
+        </select>
+      </div>
+      <button class="formulario-libro-btn" type="submit">Add Book</button>
+    </form>
+
+    </section>
+    
+    <div class="book-cards-container"></div>
+
+
+  </div> 
+  
+
+    <!-- <script src="app.js"></script> -->
+    <script src="appCorregida.js"></script>
+  </h1>
+</body>
+</html>
