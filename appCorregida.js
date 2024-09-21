@@ -12,6 +12,7 @@ const formulario = document.querySelector('#bookForm');
 const mostrarFormulario = () => {
     agregarLibroBtn.style.display = 'none';
     formContainer.style.display = 'flex';
+    bookCardsContainer.style.display = 'none'
 };
 
 agregarLibroBtn.addEventListener('click', mostrarFormulario);
@@ -21,6 +22,7 @@ formContainer.addEventListener('click', function(event) {
     if (!formulario.contains(event.target)) {
         formContainer.style.display = 'none';
         agregarLibroBtn.style.display = 'block';
+        bookCardsContainer.style.display = 'flex'
     }
 });
 
@@ -127,6 +129,7 @@ const añadirLibroALibros = (event) => {
     resetInputs();
     formContainer.style.display = 'none'; 
     agregarLibroBtn.style.display = 'block';
+    bookCardsContainer.style.display = 'flex'
     displayBooksOnPage();
 };
 
